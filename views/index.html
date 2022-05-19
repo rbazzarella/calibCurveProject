@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+
+    <div>
+      <form id="genInputs">
+        <label for="numberOfCalib">Enter the number of calibration points: </label>
+        <input type="number" id="numberOfCalib" style="width: 2em">
+        <label for="weightingFactor">Weighting factor</label>
+        <select name="weightingFactor" id="weightingFactor">
+          <option>none</option>
+          <option>1/x</option>
+          <option>1/x²</option>
+        </select>
+        <br/><br/>
+        <button type="submit">Click!</button><br/><br/>
+      </form>
+    </div>
+
+    <form id="areasForm">
+
+      <div class="grid-container"> 
+
+        <div id="calPoints" class="grid-item">Cal points<br></div>
+        <div id="calAreas" class="grid-item">Cal areas<br></div>
+        <div id="PIAreas" class="grid-item">PI areas<br></div>    
+
+      </div>
+
+    </form>
+    
+    <p id="result"></p>
+
+    <p id="calibrationCurve"></p>
+
+    <div id="graph"></div>
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script src="../public/app.js"></script>
+
+</body>
+</html>
