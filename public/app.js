@@ -40,22 +40,17 @@ function generateInputs(e) {
         PIAreaEl.setAttribute('class', 'PIAreaInput');
         PIAreaEl.setAttribute('placeholder', 'PI area of cal ' + i);
 
-        calPointsDiv.appendChild(concEl);
-        calPointsDiv.appendChild(checkBoxEl);
-        calPointsDiv.appendChild(br1);
-        calAreasDiv.appendChild(areaEl);
-        calAreasDiv.appendChild(br2);
-        PIAreasDiv.appendChild(PIAreaEl);
-        PIAreasDiv.appendChild(br3);
+        calPointsDiv.append(concEl, checkBoxEl, br1);
+        calAreasDiv.append(areaEl, br2);
+        PIAreasDiv.append(PIAreaEl, br3);
     }
 
     const br = document.createElement("br");
-    areasFormEl.appendChild(br);
     const resultBt = document.createElement("button");
     resultBt.setAttribute('id', 'calibResult');
     resultBt.setAttribute('type', 'submit');
     resultBt.innerHTML = "generate curve";
-    areasFormEl.appendChild(resultBt);
+    areasFormEl.append(br, resultBt);
     numbOfCalInp.setAttribute('disabled', 'true');
     genInputsBt.style.display = 'none';
 }
