@@ -1,53 +1,92 @@
 body {
     text-align: center;
     font-family: verdana;
-    background-color: #FFFFCC;
 }
 
-input {
-  width: 100px;
+h1 {
+  background: #BBBBBB;
+  max-width: 800px;
+  margin-inline: auto;
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid black;
 }
 
-label {
-  font-size: 18px;
-}
-
-input {
-  font-size: 18px;
-}
-
-button {
-  font-size: 18px;
+#container {
+  background-color: #FFFFCC;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
 select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-inline: auto;
+}
+
+#calsBtn {
+  border-radius: 5px;
+  padding: 4px 8px;
+  background: skyblue;
+  color: white;
+}
+
+label, input, button, select, #calibResult {
   font-size: 18px;
 }
 
 #calibResult {
-  font-size: 18px;
+  display: block;
+  margin-inline: auto;
+  border-radius: 5px;
+  padding: 4px 8px;
+  background: #2266DD;
+  color: white;
 }
 
 .grid-container {
     display: grid;
-    column-gap: 50px;
+    max-width: 600px;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
-    padding: 20px;
-    column-gap: 30px;
+    padding: 10px;
+    column-gap: 10px;
     row-gap: 10px;
-    /*width: 50%;*/
     margin: auto;
     border-radius: 10px;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
+  /*max-width: 120px;*/
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+  padding: 5px;
   text-align: center;
   border-radius: 10px;
+}
+
+.concInput {
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.areaInput, .PIAreaInput {
+  width: 150px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 svg {

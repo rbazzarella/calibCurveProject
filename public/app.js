@@ -45,14 +45,13 @@ function generateInputs(e) {
         PIAreasDiv.append(PIAreaEl, br3);
     }
 
-    const br = document.createElement("br");
     const resultBt = document.createElement("button");
     resultBt.setAttribute('id', 'calibResult');
     resultBt.setAttribute('type', 'submit');
     resultBt.innerHTML = "generate curve";
-    areasFormEl.append(br, resultBt);
+    areasFormEl.append(resultBt);
     numbOfCalInp.setAttribute('disabled', 'true');
-    genInputsBt.style.display = 'none';
+    genInputsBt.style.visibility = 'hidden';
 }
 
 genInputsForm.addEventListener('submit', generateInputs);

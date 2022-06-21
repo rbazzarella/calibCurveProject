@@ -10,21 +10,22 @@
 </head>
 <body>
 
-    <div>
-      <form id="genInputs">
-        <label for="numberOfCalib">Enter the number of calibration points: </label>
-        <input type="number" id="numberOfCalib" style="width: 2em">
-        <label for="weightingFactor">Weighting factor</label>
-        <select name="weightingFactor" id="weightingFactor">
-          <option>none</option>
-          <option>1/x</option>
-          <option>1/x²</option>
-        </select>
-        <br/><br/>
-        <button type="submit">Click!</button><br/><br/>
-      </form>
-    </div>
+  <h1>Calibration Curve</h1>
 
+  <div id="container">
+    <form id="genInputs">
+      <label for="numberOfCalib">Enter the number of calibration points: </label>
+      <input type="number" id="numberOfCalib" style="width: 2em"><br/>
+      <label for="weightingFactor">Weighting factor: </label>
+      <select name="weightingFactor" id="weightingFactor">
+        <option>none</option>
+        <option>1/x</option>
+        <option>1/x²</option>
+      </select>
+      
+      <button type="submit" id="calsBtn">Click!</button><br/><br/>
+    </form>
+  
     <form id="areasForm">
 
       <div class="grid-container"> 
@@ -42,6 +43,8 @@
     <p id="calibrationCurve"></p>
 
     <div id="graph"></div>
+
+    </div>
   
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
